@@ -1,0 +1,148 @@
+/* --- Base Styles --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light, official background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e4070; /* Deep University Blue */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1em;
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #666;
+    font-size: 0.85em;
+    border-top: 1px solid #ddd;
+    margin-top: 50px;
+}
+
+/* --- Login Page Specific Styles --- */
+.login-container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #1e4070;
+    margin-bottom: 25px;
+}
+
+#site-logo {
+    width: 100px; /* Adjust size for your logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+#login-form button[type="submit"] {
+    background-color: #4a90e2; /* Accent Blue for action */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+#login-form button[type="submit"]:hover {
+    background-color: #357bd8;
+}
+
+.error-message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* --- Resources Page Specific Styles --- */
+.challenge-list {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.resource-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.resource-item h3 {
+    color: #1e4070;
+    margin-top: 0;
+}
+
+.resource-item .button {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.resource-item .button:hover {
+    background-color: #357bd8;
+}
+
+/* Logout Button on Resources Page */
+header button {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    float: right; /* Position it to the right */
+    margin-right: 20px;
+    margin-top: -30px; /* Pull it up next to the header text */
+}
+
+header button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
